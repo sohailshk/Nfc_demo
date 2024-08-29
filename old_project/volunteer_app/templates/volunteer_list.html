@@ -1,0 +1,10 @@
+<h1>Volunteers</h1>
+{% for volunteer in volunteers %}
+<div>
+    <h2>{{ volunteer.name }}</h2>
+    <img src="{{ volunteer.photo.url }}" alt="{{ volunteer.name }}">
+    <p>{{ volunteer.description }}</p>
+    <p>Phone: {{ volunteer.phone_number }}</p>
+    <p>Email: {{ volunteer.email }}</p>
+</div>
+{% endfor %}
